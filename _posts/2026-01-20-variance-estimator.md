@@ -159,7 +159,7 @@ We proceed in the same way as in the previous subsection:
 - To obtain $\widehat{\sigma}^2$, we compute the distance from the origin to the
   projection of $(X_1, X_2)$ onto the line $X_1 + X_2 = 0$.
 
-<img src="/assets/mu_shift.gif"
+<img src="/assets/mu_shift_2.gif"
      alt="Variance estimator animation"
      style="max-width: 600px; width: 100%; display: block; margin: 1.5em auto;">
 

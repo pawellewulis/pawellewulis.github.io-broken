@@ -88,6 +88,7 @@ $$
 \langle \boldsymbol{X} - \boldsymbol{C}, \mathbf{1} \rangle
 = X_1' + \dots + X_n'=
 $$
+
 $$
 \left( X_1 - \frac{X_1 + \dots + X_n}{n} \right)
 + \dots
@@ -115,23 +116,25 @@ Even though the scenario depicted above may appear overly simplistic, it still a
 Basic trigonometry shows that we have
 
 $$
-\lVert \boldsymbol{X} \rVert_{\ell^2}
-= \lVert \boldsymbol{X} - \boldsymbol{C} \rVert_{\ell^2} \cos(\alpha),
+\lVert \boldsymbol{X} \rVert_{\ell^2} \cos(\alpha)
+=
+\lVert \boldsymbol{X} - \boldsymbol{C} \rVert_{\ell^2},
 $$
 
 which in the $\mu = 0$ case implies
 
 $$
-n\,\widehat{\sigma}^2_{\mu\text{ known}}
-= (n-1)\,\widehat{\sigma}^2 \cos(\alpha).
+n\,\widehat{\sigma}^2_{\mu\text{ known}} \cos(\alpha)
+
+= (n-1)\,\widehat{\sigma}^2 .
 $$
 
 Now observe that replacing $n-1$ with $n$ in the definition of $\widehat{\sigma}^2$ would lead to a highly dubious identity
 
 $$
-\widehat{\sigma}^2_{\mu\text{ known}}
+\widehat{\sigma}^2_{\mu\text{ known}} \cos(\alpha)
 \stackrel{?!}{=}
-\widehat{\sigma}^2 \cos(\alpha).
+\widehat{\sigma}^2.
 $$
 
 Since $\lvert \cos(\alpha) \rvert \leq 1$, this would systematically push the variance estimate downward. This is precisely the bias we want to avoid.

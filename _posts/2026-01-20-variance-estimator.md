@@ -362,7 +362,7 @@ and $\operatorname{tr}(\boldsymbol{A})$ for the trace of $\boldsymbol{A}$.
 </div>
 
 *Proof.* $~$ Unfortunately, we need to simply expand. It doesn't seem like there is anything more
-clever we could pull off.
+clever we could pull off:
 
 $$
 \mathbf{E}\!\left[ \boldsymbol{X}^\top \boldsymbol{A} \boldsymbol{X} \right]

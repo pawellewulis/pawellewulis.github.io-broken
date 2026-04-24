@@ -298,15 +298,11 @@ What are the necessary conditions a question needs to satisfy to lead us to a so
 
 Let's quickly explain why the second condition is indeed necessary. 
 
-<img src="/assets/img/goddesses/goddesses_scenarios.bmp"
-     alt="Scenarios"
-     style="max-width: 700px; width: 100%; display: block; margin: 1.5em auto;">
-
 
 <figure style="max-width: 600px; margin: 1.5em auto; text-align: center;">
-  <img src="/assets/img/goddesses/goddesses_scenarios.bmp"
+  <img src="/assets/img/goddesses/goddesses_scenarios.png"
      alt="Scenarios"
-     style="max-width: 700px; width: 100%; display: block; margin: 1.5em auto;">
+     style="max-width: 600px; width: 100%; display: block; margin: 1.5em auto;">
   <figcaption style="font-size: 0.9em; color: #000;">
     The black dots represent the candidate permutations left after getting an answer for the first question. Since we don't know if the goddess was lying or not, we need to consider both possibilites.
   </figcaption>

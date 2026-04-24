@@ -77,7 +77,7 @@ You may ask a single yes/no questions addressed to exactly one guardian, in orde
        alt="Two-headed Worm"
        style="width: 100%;">
   <figcaption style="font-size: 0.9em; color:  #000;">
-    The two guardians puzzle even makes a cameo in popular media. For instance, in the 15th episode of Samurai Jack, a two-headed worm (falsely) promises to grant a wish if the samurai solves the puzzle correctly.
+    The two guardians puzzle makes a cameo in popular media. For instance, in the 15th episode of Samurai Jack, a two-headed worm (falsely) promises to grant a wish if the samurai solves the puzzle correctly.
   </figcaption>
 </figure>
 
@@ -284,8 +284,8 @@ A proverbial careful reader might've noticed that the question I chose for $G_1$
 
 First, let's notice that every question we could ask is meant to identify some subset of permutations of $\{T,F,R \}$ that can match the true arrangement. Essentially, any question is in this sense equivalent to asking something akin to:
 
-$$ \text{Does the correct permutation belong to the set} \\
-S := \{(T,F,R), (R,T,F), (F,R,T), (T,R,F)\} \text{?} $$
+$$ \text{Does the correct permutation belong to the set}$$
+$$ S := \{(T,F,R), (R,T,F), (F,R,T), (T,R,F)\} \text{?} $$
 
 where $\mathcal{S}$ can be any subset of these 6 permutations we could think of. In particular, if $\mathcal{S}$ contained all the permutations, then the question above is equivallent to asking about any statement we know beforehand to be True. 
 

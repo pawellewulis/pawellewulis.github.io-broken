@@ -278,7 +278,7 @@ The answer actually tells us a lot:
 
 We are now done, because two questions are exactly enough to identify which of the $4$ candidate permutations is the correct one!
 
-# Is it 'a Solution' or 'the Solution'?
+# Addendum: Is it 'a Solution' or 'the Solution'?
 
 A proverbial careful reader might've noticed that the question I chose for $G_1$ in the previous section is a bit arbitrary. It does the job, but is it necessary?
 
@@ -296,9 +296,11 @@ What are the necessary conditions a question needs to satisfy to lead us to a so
 - It needs to leave us with at most 4 candidate permutations. Otherwise, two questions are not enough, even if we are sure that it is not $R$ who answers.
 - We need to be able to idenfity one goddess who is not $R$.
 
-Let's quickly explain why the second condition is indeed necessary. Suppose that our questions is about the subset
+Let's quickly explain why the second condition is indeed necessary. Suppose that our question is about the subset
 
-$$ \mathcal{S} = \{ \} $$
+$$ \mathcal{S} = \{ (R,F,T) , (F,R,T), (F,T,R)\}. $$
+
+The diagram below describes which permutations qualift as the candidates depending on whether the goddess lies or not. Remember that if $G_1$ lies, then $G_1 = R$ by force. 
 
 
 <figure style="max-width: 750px; margin: 1.5em auto; text-align: center;">
@@ -306,10 +308,17 @@ $$ \mathcal{S} = \{ \} $$
        alt="Scenarios"
        style="width: 100%; display: block;">
   <figcaption style="font-size: 0.9em; color: #000;">
-    ...
+    The black dots represent the candidate permutations left after getting an answer for the first question. Since we don't know if the goddess was lying or not, we need to consider both possibilites.
   </figcaption>
 </figure>
 
+Now, regardelss of the next question, we aren't guaranteed to exclude 2 candidates. All the goddesses can still possibly be $R$, so if we ask the second question to e.g. $G_2$, then $(F,R,T)$ always prevails as a candiate. The remaining 3 permutations can be split as either 2-1 or 3-0, if $G_2$ is not $R$. We are left with:
+- $G_2=R$, which brings $(F,R,T)$ as a candidate,
+- $G2 \not= R$, which can possibly bring 2 (or 3) candidates.
+
+That totals up to at least 3 permutations, which is impossible to solve with only a single question left. If we directed the second question to either $G_1$ and $G_3$, then a similar argument applies.
+
+To summarize, whether our first question to $G_1$ contains either $(R,F,T)$ or $(R,T,F)$, doesn't really matter, because each of these two will remain as candidates, since we can't exclude $G_1=R$ at this stage. Concerning the remaining 4 permutations, we need to ask about either $G_2=R$ or $G_3=R$, to be sure that we could identify a non-$R$ goddess for the remaining two questions. That gives us $8$ valid first questions in total, which means that $1/8 = 12.5\%$ of the possible first questions may lead us to a complete solution.  
 
 
 <!-- # Beyond the Original Problem

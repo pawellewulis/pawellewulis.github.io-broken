@@ -296,15 +296,17 @@ What are the necessary conditions a question needs to satisfy to lead us to a so
 - It needs to leave us with at most 4 candidate permutations. Otherwise, two questions are not enough, even if we are sure that it is not $R$ who answers.
 - We need to be able to idenfity one goddess who is not $R$.
 
-Let's quickly explain why the second condition is indeed necessary. 
+Let's quickly explain why the second condition is indeed necessary. Suppose that our questions is about the subset
+
+$$ \mathcal{S} = \{ \} $$
 
 
-<figure style="max-width: 600px; margin: 1.5em auto; text-align: center;">
+<figure style="max-width: 750px; margin: 1.5em auto; text-align: center;">
   <img src="/assets/img/goddesses/goddesses_scenarios.png"
-     alt="Scenarios"
-     style="max-width: 600px; width: 100%; display: block; margin: 1.5em auto;">
+       alt="Scenarios"
+       style="width: 100%; display: block;">
   <figcaption style="font-size: 0.9em; color: #000;">
-    The black dots represent the candidate permutations left after getting an answer for the first question. Since we don't know if the goddess was lying or not, we need to consider both possibilites.
+    ...
   </figcaption>
 </figure>
 

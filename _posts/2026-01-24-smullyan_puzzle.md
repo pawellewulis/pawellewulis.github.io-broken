@@ -8,8 +8,8 @@ title: 'The Tale of the Hardest Logic Puzzle Ever'
 ---
 
 <img src="/assets/img/goddesses/goddesses.bmp"
-     alt="Variance estimator animation"
-     style="max-width: 600px; width: 100%; display: block; margin: 1.5em auto;">
+     alt="Front Image"
+     style="max-width: 700px; width: 100%; display: block; margin: 1.5em auto;">
 
 The puzzle once baptized as the hardest logic puzzle ever was described in an article of George Boolos published by The Harvard Review of Philosophy in 1996 where Raymond Smullyan is mentioned as the original author in the very first sentence. Without further ado, let's unveil the formulation of this puzzle.
 
@@ -21,7 +21,7 @@ You may ask three yes/no questions, each addressed to exactly one goddess, in or
 </i> 
 </div>
 
-### Relevant Assumptions
+#### Relevant Assumptions
 
 The following two clarifications are mentioned by Boolos himself in his article:
 
@@ -33,14 +33,22 @@ The following two clarifications are mentioned by Boolos himself in his article:
 
 One extra detail worth addressing upfront is that some solutions attempt to 'hack' the problem by posing paradoxical questions with no well-defined answer, for instance:
 
-<div align="left">
-<i>If Statement 1 says ‘Statement 2 is true’ and Statement 2 says ‘Statement 1 is false’, then is Statement 1 true? </i>
+<!-- <div align="left">
+<i></i>
+</div>
+<br> -->
+
+<br>
+<div style="text-align: center; font-size: 1.0em;">
+    If Statement 1 says ‘Statement 2 is True’<br>
+    and Statement 2 says ‘Statement 1 is False’,<br>
+    then is Statement 1 True?
 </div>
 <br>
 
 To rule this case out, let us adopt the convention that any such question makes a goddess wrathful and she responds with a randomly chosen answer. The same applies to questions that fall outside the scope of her vast knowledge.
 
-### Key Difficulties
+#### Key Difficulties
 
 This problem is an excellent example on how to decompose a bigger problem into a bunch of smaller and easier ones. 
 
@@ -68,8 +76,8 @@ You may ask a single yes/no questions addressed to exactly one guardian, in orde
   <img src="/assets/img/goddesses/samurai_jack_worms.jpg"
        alt="Two-headed Worm"
        style="width: 100%;">
-  <figcaption style="font-size: 0.9em; color: #555;">
-    The two guardians puzzle even makes a cameo in popular media. For instance, in the 15th episode of Samurai Jack, a two-headed worm (falsely) promises to grant a wish if the samurai solves the puzzle correctly.  <sup>1</sup>
+  <figcaption style="font-size: 0.9em; color:  #000;">
+    The two guardians puzzle even makes a cameo in popular media. For instance, in the 15th episode of Samurai Jack, a two-headed worm (falsely) promises to grant a wish if the samurai solves the puzzle correctly.
   </figcaption>
 </figure>
 
@@ -79,7 +87,7 @@ You may ask a single yes/no questions addressed to exactly one guardian, in orde
 ### Analysis
 
 Let us ponder a bit on the dynamics guiding the solution and formalize our discussion a bit. It might be reasonable to start with analysing some obvious questions. Perhaps:
-<br>
+
 <div align="left">
 <b>Question:</b>
 <i>Are you the one speaking the truth? </i><br>
@@ -88,10 +96,9 @@ Let us ponder a bit on the dynamics guiding the solution and formalize our discu
 <b>F:</b> 
 <i> Yes. </i>
 </div>
-<br>
+
 That doesn't look very helpful. Even if both of the guardians answered (and actually only the one chosen would) we receive no information. Let's try another approach: 
 
-<br>
 <div align="left">
 <b>Question:</b>
 <i>Is it true that 2+2=4?</i><br>
@@ -100,10 +107,9 @@ That doesn't look very helpful. Even if both of the guardians answered (and actu
 <b>F:</b> 
 <i> No. </i>
 </div>
-<br>
+
 Great. Now, we now which one is the truthsayer, but we have no idea who has the key. It's a tiny step forward, though. How about:
 
-<br>
 <div align="left">
 <b>Question:</b>
 <i>Do you have the key?</i><br>
@@ -112,7 +118,7 @@ Great. Now, we now which one is the truthsayer, but we have no idea who has the 
 <b>F:</b> 
 <i> No. </i>
 </div>
-<br>
+
 In this scenario we can conclude that the liar has the key, but we can't tell which guardian is which.
 
 Let us introduce some notation. Assume that $x$ is a sentence and $v(x)$ is its logical value, so $v(x)=1$ if $x$ is True and $v(x)=0$ if $x$ is False. The general form of the question we ask is:
@@ -134,9 +140,12 @@ Let's describe this reasoning using our rudimentary formalism:
 - If we ask $F$, then to get the answer we ask if $\neg x$ is True. 
 
 We can combine these two points into a single question. Define
+
 $$ \varphi(x) := (x \, \wedge \, \text{You are $T$}) \, \lor 
     \, (\neg x \, \wedge \, \text{You are $F$}). $$
+
 Now, we ask any guardian:
+
 $$ \text{Is it true that $\varphi(x)$?}$$
 
 There are four possible cases: the guardian we ask may be truthful or not, and $x$ may be True or False. The resulting answers provided by the guardians are summarized below. The ticks and crosses indicate whether the question $\varphi (x)$ itself evaluates to True ($\checkmark$) or False ($\times$).
@@ -274,8 +283,8 @@ We are now done, because two questions are exactly enough to identify which of t
 A proverbial careful reader might've noticed that the question I chose for $G_1$ in the previous section is a bit arbitrary. It does the job, but is it necessary?
 
 First, let's notice that every question we could ask is meant to identify some subset of permutations of $\{T,F,R \}$ that can match the true arrangement. Essentially, any question is in this sense equivalent to asking something akin to:
-$$ \text{Does the correct permutation belong to the set} \\
 
+$$ \text{Does the correct permutation belong to the set} \\
 S := \{(T,F,R), (R,T,F), (F,R,T), (T,R,F)\} \text{?} $$
 
 where $\mathcal{S}$ can be any subset of these 6 permutations we could think of. In particular, if $\mathcal{S}$ contained all the permutations, then the question above is equivallent to asking about any statement we know beforehand to be True. 
@@ -288,6 +297,20 @@ What are the necessary conditions a question needs to satisfy to lead us to a so
 - We need to be able to idenfity one goddess who is not $R$.
 
 Let's quickly explain why the second condition is indeed necessary. 
+
+<img src="/assets/img/goddesses/goddesses_scenarios.bmp"
+     alt="Scenarios"
+     style="max-width: 700px; width: 100%; display: block; margin: 1.5em auto;">
+
+
+<figure style="max-width: 600px; margin: 1.5em auto; text-align: center;">
+  <img src="/assets/img/goddesses/goddesses_scenarios.bmp"
+     alt="Scenarios"
+     style="max-width: 700px; width: 100%; display: block; margin: 1.5em auto;">
+  <figcaption style="font-size: 0.9em; color: #000;">
+    The black dots represent the candidate permutations left after getting an answer for the first question. Since we don't know if the goddess was lying or not, we need to consider both possibilites.
+  </figcaption>
+</figure>
 
 
 

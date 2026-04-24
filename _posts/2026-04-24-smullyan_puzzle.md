@@ -176,9 +176,7 @@ That means that we need to learn which alien is in possession of the key without
 
 $$ \psi(x) := (x \, \wedge \, \text{Da is Yes}) \, \lor 
     \, (\neg x \, \wedge \, \text{Da is No}). $$
-
 Now, we ask:
-
 $$ \text{Is it true that $\psi(x)$?}$$
 
 
@@ -190,7 +188,6 @@ $$
 \text{Da is No} & \text{Da } _\times & \text{Ja } _\checkmark \\
 \end{array}
 $$
-
 Again, we reached a configuration where Da simply indicated that the underlying question $x$ is true. The rest follows easily by simply setting $x$ as 'You have the key.' again.
 
 # Even Aliens Can Lie
@@ -200,9 +197,7 @@ Take the same puzzle about aliens from the previous section, but add an extra as
 $$ (\psi \, \circ \, \varphi ) (x) = 
     (\varphi (x) \, \wedge \, \text{Da is Yes}) \, \lor 
     \, (\neg \varphi (x) \, \wedge \, \text{Da is No}).  $$
-
 This sentence can be expanded as:
-
 $$ 
     (x \, \wedge \, \text{You are $T$} \, \wedge \, \text{Da is Yes}) 
     \, \lor \, 

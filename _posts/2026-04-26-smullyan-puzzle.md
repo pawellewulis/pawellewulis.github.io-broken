@@ -6,7 +6,7 @@ title: "The Tale of the Hardest Logic Puzzle Ever"
 
 ---
 
-<img src="/assets/img/goddesses/goddesses.bmp"
+<img src="/assets/img/goddesses/goddesses.png"
      alt="Front Image"
      style="max-width: 700px; width: 100%; display: block; margin: 1.5em auto;">
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-25T13:01:06+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Paweł Lewulis</title><subtitle>Math, quant stuff, and other distractions.</subtitle><author><name>Paweł Lewulis</name></author><entry><title type="html">The Tale of the Hardest Logic Puzzle Ever</title><link href="http://localhost:4000/2026/04/24/smullyan_puzzle.html" rel="alternate" type="text/html" title="The Tale of the Hardest Logic Puzzle Ever" /><published>2026-04-24T00:00:00+02:00</published><updated>2026-04-24T00:00:00+02:00</updated><id>http://localhost:4000/2026/04/24/smullyan_puzzle</id><content type="html" xml:base="http://localhost:4000/2026/04/24/smullyan_puzzle.html"><![CDATA[<p><img src="/assets/img/goddesses/goddesses.bmp" alt="Front Image" style="max-width: 700px; width: 100%; display: block; margin: 1.5em auto;" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-25T13:04:20+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Paweł Lewulis</title><subtitle>Math, quant stuff, and other distractions.</subtitle><author><name>Paweł Lewulis</name></author><entry><title type="html">The Tale of the Hardest Logic Puzzle Ever</title><link href="http://localhost:4000/2026/04/24/smullyan_puzzle.html" rel="alternate" type="text/html" title="The Tale of the Hardest Logic Puzzle Ever" /><published>2026-04-24T00:00:00+02:00</published><updated>2026-04-24T00:00:00+02:00</updated><id>http://localhost:4000/2026/04/24/smullyan_puzzle</id><content type="html" xml:base="http://localhost:4000/2026/04/24/smullyan_puzzle.html"><![CDATA[<p><img src="/assets/img/goddesses/goddesses.bmp" alt="Front Image" style="max-width: 700px; width: 100%; display: block; margin: 1.5em auto;" /></p>
 
 <p>The puzzle once baptized as the hardest logic puzzle ever was described in an article of George Boolos published by The Harvard Review of Philosophy in 1996 where Raymond Smullyan is mentioned as the original author in the very first sentence. Without further ado, let’s unveil the formulation of this puzzle.</p>
 
@@ -15,8 +15,8 @@ You may ask three yes/no questions, each addressed to exactly one goddess, in or
   <em>
     Three goddesses stand before you: the Goddess of Truth, who always speaks truthfully; 
     the Goddess of Lies, who always speaks falsely; and the Goddess of Fate, who answers 
-    truthfully or falsely at random. You do not know which goddess is which. You may ask 
-    three yes/no questions, each addressed to exactly one goddess, in order to determine 
+    truthfully or falsely at random. You do not know which goddess is which. 
+    You may ask three yes/no questions, each addressed to exactly one goddess, in order to determine 
     their identities. The goddesses understand English, but reply in their own language, 
     in which the words da and ja mean yes and no in some unknown order.
   </em>
@@ -62,13 +62,11 @@ You may ask three yes/no questions, each addressed to exactly one goddess, in or
 
 <p>The first issue we resolve is how to avoid getting tricked by the Goddess of Lies.  It is best to start with a simpler puzzle that’s possibly even more well known that the Smullyan’s puzzle that we discuss. I particularly like the lore of two guardians, but many have heard it as the ‘knights and knaves’ problem. The problem is now as follows.</p>
 
-<div align="left">
-<i> 
-Two guardians stand before you: one of them always speaks the truth; the other one always lies. One of the guardians has a key that you need to pass further.
-You may ask a single yes/no questions addressed to exactly one guardian, in order to determine which one possesses the key.
-</i>
+<div style="border: 2px solid black; padding: 12px; margin: 1.5em 0;">
+  <em>
+    Two guardians stand before you: one of them always speaks the truth; the other one always lies. One of the guardians has a key that you need to pass further. You may ask a single yes/no questions addressed to exactly one guardian, in order to determine which one possesses the key.
+  </em>
 </div>
-<p><br /></p>
 
 <figure style="max-width: 600px; margin: 1.5em auto; text-align: center;">
   <img src="/assets/img/goddesses/samurai_jack_worms.jpg" alt="Two-headed Worm" style="width: 100%;" />
@@ -162,12 +160,11 @@ F &amp; \text{Yes } _\times &amp; \text{No } _\checkmark \\
 
 <p>Let’s try to isolate this particular difficulty and try to solve a simpler problem of this kind first.</p>
 
-<div align="left">
-<i> 
-Two aliens stand before you: both of them always speak the truth. The aliens understand English, but reply in their own language, in which the words da and ja mean yes and no in some unknown order. One of the guardians has a key that you need to pass further. You may ask a single yes–no questions addressed to exactly one alien, in order to determine which one possesses the key.
-</i>
+<div style="border: 2px solid black; padding: 12px; margin: 1.5em 0;">
+  <em>
+    Two aliens stand before you: both of them always speak the truth. The aliens understand English, but reply in their own language, in which the words da and ja mean yes and no in some unknown order. One of the guardians has a key that you need to pass further. You may ask a single yes–no questions addressed to exactly one alien, in order to determine which one possesses the key.
+  </em>
 </div>
-<p><br /></p>
 
 <p>Notice that we can’t possibly know the logical value of these two statements at the same time:
 - Da stands for Yes.

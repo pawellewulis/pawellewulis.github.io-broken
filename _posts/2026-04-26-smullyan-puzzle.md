@@ -2,8 +2,7 @@
 
 layout: post
 
-# title: 'The Tale of Smullyan's "Hardest Logic Puzzle Ever"'
-title: 'The Tale of the Hardest Logic Puzzle Ever'
+title: "The Tale of the Hardest Logic Puzzle Ever"
 
 ---
 

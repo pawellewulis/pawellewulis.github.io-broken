@@ -10,7 +10,7 @@ title: "The Tale of the Hardest Logic Puzzle Ever"
      alt="Front Image"
      style="max-width: 700px; width: 100%; display: block; margin: 1.5em auto;">
 
-The puzzle once baptized as the hardest logic puzzle ever was described in an article by George Boolos, published in The Harvard Review of Philosophy in 1996, where Raymond Smullyan is mentioned as the original author in the very first sentence. The attribution might not entirely straightforward, but we will not dwell on historical technicalities here. Without further ado, let's unveil the formulation of this puzzle.
+The puzzle once baptized as the hardest logic puzzle ever was described in an article by George Boolos, published in *The Harvard Review of Philosophy* in 1996, where Raymond Smullyan is mentioned in the very first sentence as the original author. How the problem was originally formulated, and its exact attribution, are not entirely straightforward, but we will not dwell on historical technicalities here. Without further ado, let's unveil the challenge:
 
 <div style="border: 2px solid black; padding: 12px; margin: 1.5em 0;">
   <em>
@@ -23,17 +23,17 @@ The puzzle once baptized as the hardest logic puzzle ever was described in an ar
 
 Before we proceed, let's take a look at a few clarifications mentioned by Boolos himself in his article:
 
-- Answers given by the Goddess of Fate may be treated as the result of a fair coin toss between da and ja. Since we are expected to provide a strategy that works with certainty, we must always consider both possibilities anyway.
+- Answers given by the Goddess of Fate may be treated as the result of a fair coin toss between Da and Ja. Since we are expected to provide a strategy that works with certainty, we must always consider both possibilities anyway.
 
 - You don't have to question each goddess exactly once.
 
 - The choice of which goddess to question may depend on previous answers.
 
-One extra detail worth addressing upfront is that some solutions attempt to "hack" the problem by posing paradoxical questions with no well-defined answer, for instance:
+One extra detail worth addressing upfront is that some solutions attempt to 'hack' the problem by posing paradoxical questions with no well-defined answer, for instance:
 
 $$ \text{Is this statement false?} $$
 
-To rule out such cases, let us adopt the convention that any such question makes a goddess wrathful, and she responds with a randomly chosen answer. The same applies to questions that fall outside the scope of her vast knowledge.
+To rule out these cases, let us adopt the convention that any such question makes a goddess wrathful, and she responds with a randomly chosen answer. The same applies to questions that fall outside the scope of her vast knowledge.
 
 #### Key Difficulties
 
@@ -209,7 +209,7 @@ Let us isolate this difficulty and look at a simpler problem.
 <div style="border: 2px solid black; padding: 12px; margin: 1.5em 0;">
   <em>
     <strong>Puzzle 2.</strong>
-    Two aliens stand before you: both of them always speak the truth. They understand English but reply in their own language, in which the words da and ja mean yes and no in some unknown order. One of the aliens has a key that you need. You may ask a single Yes/No question, addressed to exactly one alien, in order to determine which one possesses the key.
+    Two aliens stand before you: both of them always speak the truth. They understand English but reply in their own language, in which the words Da and Ja mean yes and no in some unknown order. One of the aliens has a key that you need. You may ask a single Yes/No question, addressed to exactly one alien, in order to determine which one possesses the key.
   </em>
 </div>
 

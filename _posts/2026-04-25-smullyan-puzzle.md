@@ -166,13 +166,13 @@ Any Yes answer means that $v(x)=1$, regardless of which guardian we ask. This fu
 
 At this point, it may be helpful to recall how an answer carries information.
 
-Since each answer is Yes/No, we can think of it as a single bit of information, either $1$ or $0$. In this sense, a sequence of answers to, say, $3$ questions can be represented as, for example, $101$ or $110$. In general, asking $k$ questions yields $2^k$ possible sequences of answers, each corresponding to a distinct state. On the other hand, if the number of states is $n$, then we need at least $\lceil \log_2 n \rceil$ questions to distinguish between them. 
+Since each answer is Yes/No, we can think of it as a single bit of information, either $1$ or $0$. In this sense, a sequence of answers to, say, 3 questions can be represented as, for example, $101$ or $110$. In general, asking $k$ questions yields $2^k$ possible sequences of answers, each corresponding to a distinct state. On the other hand, if the number of states is $n$, then we need at least $\lceil \log_2 n \rceil$ questions to distinguish between them. 
 
 <div style="height: 1.0em;"></div>
 
 #### Example
 
-We have $5$ barrels of wine, one of them poisoned. A servant knows which one it is and, eager to undo his 'mistake', answers truthfully to any Yes/No question. Are $2$ questions enough to identify the poisoned barrel? Let's see: we only get $2$ bits of information, so at most we can distinguish between $4$ possible states. For instance, we could assign:
+We have 5 barrels of wine, one of them poisoned. A servant knows which one it is and, eager to undo his 'mistake', answers truthfully to any Yes/No question. Are 2 questions enough to identify the poisoned barrel? Let's see: we only get 2 bits of information, so at most we can distinguish between 4 possible states. For instance, we could assign:
 
 
 $$
@@ -184,13 +184,13 @@ $$
     \end{aligned}
 $$
 
-That leaves Barrel 5 with nowhere to go. All $2$-bit sequences are already taken. So either we ask another question, or we accept that some outcomes must correspond to more than one possibility. For example:
+That leaves Barrel 5 with nowhere to go. All 2-bit sequences are already taken. So either we ask another question, or we accept that some outcomes must correspond to more than one possibility. For example:
 
 $$
   11 \mapsto \text{One of the Barrels 4 or 5 is poisoned.}
 $$
 
-If the servant answers Yes to both questions, you can still safely drink from $3$ barrels. Similarly, even a single question is enough to guarantee at least $2$ clean barrels by assigning:
+If the servant answers Yes to both questions, you can still safely drink from 3 barrels. Similarly, even a single question is enough to guarantee at least 2 clean barrels by assigning:
 
 $$
     \begin{aligned}
@@ -205,7 +205,7 @@ Better than nothing.
 
 #### States to Consider in the Smullyan Puzzle
 
-In the main puzzle, we need to assign labels to three goddesses, which gives us $3!=6$ possible states. This means that $\lceil \log_2 6 \rceil = 3$ questions are the absolute minimum to distinguish between them, even if all the goddesses always spoke truthfully. Similarly, in the Two Guardians puzzle, we only needed to distinguish between $2$ possible states, so a single question was enough.
+In the main puzzle, we need to assign labels to three goddesses, which gives us $3!=6$ possible states. This means that $\lceil \log_2 6 \rceil = 3$ questions are the absolute minimum to distinguish between them, even if all the goddesses always spoke truthfully. Similarly, in the Two Guardians puzzle, we only needed to distinguish between 2 possible states, so a single question was enough.
 
 
 
@@ -300,7 +300,7 @@ The key observation is the pattern: regardless of who we ask or what Da means, t
 
 We have three goddesses, denoted by $T$, $F$, $R$ (for True, False, and Random): the Goddess of Truth, the Goddess of Lies, and the Goddess of Fate.
 
-Since we do not know which is which, we label them in arbitrary order as $G_1$, $G_2$, $G_3$. Our task is to identify the correct assignment among the $6$ possibilities. For example, one such assignment is:
+Since we do not know which is which, we label them in arbitrary order as $G_1$, $G_2$, $G_3$. Our task is to identify the correct assignment among the 6 possibilities. For example, one such assignment is:
 
 $$
     \begin{aligned}
@@ -324,11 +324,11 @@ This way we neutralize the difficulties arising from the fact that one goddess a
   </em>
 </div>
 
-Let us first observe that if $R$ also always spoke truthfully, the puzzle would become easy. We could simply split the $6$ possible assignments into two groups of three, say Group A and Group B, and ask:
+Let us first observe that if $R$ also always spoke truthfully, the puzzle would become easy. We could simply split the 6 possible assignments into two groups of three, say Group A and Group B, and ask:
 
 $$\text{Is the correct assignment in Group A?}$$
 
-After the first question, only $3$ possibilities would remain. A second question would reduce this to at most $2$, and a third would identify the correct one.
+After the first question, only 3 possibilities would remain. A second question would reduce this to at most 2, and a third would identify the correct one.
 
 Returning to the original setting, one of these bits is 'foggy', because $R$ answers at random. At first glance, this suggests that any answer from R is useless, but this is not quite true. We begin by asking $G_1$ the following question:
 
@@ -356,7 +356,7 @@ The answer leads to the following chain of conclusions:
 
 
 
-We are now done, because two questions are enough to determine which of the remaining $4$ permutations is correct!
+We are now done, because two questions are enough to determine which of the remaining 4 permutations is correct!
 
 
 <div style="height: 1.0em;"></div>
@@ -372,7 +372,7 @@ $$
     \text{?} 
 $$
 
-where $\mathcal{S}$ may be any subset of the $6$ possible permutations. Since each permutation either belongs to $\mathcal{S}$ or not, there are $2^6 = 64$ possible questions.
+where $\mathcal{S}$ may be any subset of the 6 possible permutations. Since each permutation either belongs to $\mathcal{S}$ or not, there are $2^6 = 64$ possible questions.
 
 <div style="height: 1.0em;"></div>
 
@@ -380,7 +380,7 @@ where $\mathcal{S}$ may be any subset of the $6$ possible permutations. Since ea
 
 This boils down to two simple requirements:
 
-- It must leave us with at most $4$ candidate permutations. Otherwise, two further questions are not enough.
+- It must leave us with at most 4 candidate permutations. Otherwise, two further questions are not enough.
 
 - We must be able to identify at least one goddess who is not $R$.
 
@@ -401,9 +401,9 @@ and the answer is Yes. The diagram below shows which permutations remain possibl
 </figure>
 
 
-Now, regardless of the second question, we are not guaranteed to eliminate $2$ candidate permutations. Any of the goddesses may still be $R$, so if we direct the second question, say, to $G_2$, the permutation $(F,R,T)$ always remains possible.
+Now, regardless of the second question, we are not guaranteed to eliminate 2 candidate permutations. Any of the goddesses may still be $R$, so if we direct the second question, say, to $G_2$, the permutation $(F,R,T)$ always remains possible.
 
-If $G_2 \not= R$, then the answer can at best split the remaining $3$ permutations into two groups and eliminate one of them. Since we cannot guarantee that $G_2 \not= R$, at least $3$ permutations must still be considered: $1$ arising from $G_2=R$ and $2$ from $G_2\not=R$. This is too many to resolve with a single remaining question. 
+If $G_2 \not= R$, then the answer can at best split the remaining 3 permutations into two groups and eliminate one of them. Since we cannot guarantee that $G_2 \not= R$, at least 3 permutations must still be considered: 1 arising from $G_2=R$ and 2 from $G_2\not=R$. This is too many to resolve with a single remaining question. 
 
 The same argument applies if we direct the second question to $G_1$ or $G_3$ instead.
 
@@ -411,7 +411,7 @@ The same argument applies if we direct the second question to $G_1$ or $G_3$ ins
 
 #### Counting the Possible Solutions
 
-We now understand the conditions that the first question must satisfy. Let us count the valid choices of $\mathcal{S}$, the subset of permutations specified by the question to $G_1$. First, whether $\mathcal{S}$ contains $(R,F,T)$ or $(R,T,F)$ doesn't matter, since both remain possible anyway; at this stage, we cannot exclude $G_1=R$. Among the remaining $4$ permutations, we must distinguish between the cases $G_2=R$ and $G_3=R$, so that we can identify a non-$R$ goddess and direct the remaining two questions to her.
+We now understand the conditions that the first question must satisfy. Let us count the valid choices of $\mathcal{S}$, the subset of permutations specified by the question to $G_1$. First, whether $\mathcal{S}$ contains $(R,F,T)$ or $(R,T,F)$ doesn't matter, since both remain possible anyway; at this stage, we cannot exclude $G_1=R$. Among the remaining 4 permutations, we must distinguish between the cases $G_2=R$ and $G_3=R$, so that we can identify a non-$R$ goddess and direct the remaining two questions to her.
 
 In summary, any valid subset $\mathcal{S}$:
 
@@ -419,9 +419,9 @@ In summary, any valid subset $\mathcal{S}$:
 
 - May contain $(R,T,F)$ or not.
 
-- Must contain either the $2$ permutations corresponding to $G_2=R$ or the $2$ permutations corresponding to $G_3=R$, but not all four.
+- Must contain either the 2 permutations corresponding to $G_2=R$ or the 2 permutations corresponding to $G_3=R$, but not all four.
 
-This gives $8$ valid first questions in total, so $8/64=12.5 \%$ of all possible choices lead to a complete solution.
+This gives 8 valid first questions in total, so $8/64=12.5 \%$ of all possible choices lead to a complete solution.
 
 On the other hand, all of these questions serve the same purpose: to quickly isolate a truthful goddess we can rely on. In that sense, whether the puzzle has a 'unique' solution is largely a matter of interpretation.
 

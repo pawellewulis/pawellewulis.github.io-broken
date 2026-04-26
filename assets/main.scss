@@ -13,19 +13,11 @@ $text-color: #000;
 @import "minima";
 
 /* =========================
-   Base tweaks
+   Layout reset (clean)
    ========================= */
 
 .wrapper {
-  max-width: 1100px;
-}
-
-ol {
-  padding-left: 1.5em;
-}
-
-ol li::marker {
-  font-weight: bold;
+  max-width: 800px;
 }
 
 /* =========================
@@ -42,54 +34,57 @@ h1 { font-size: 2.2em; }
 h2 { font-size: 1.6em; }
 
 /* =========================
-   Layout (desktop FIRST)
+   Topbar (simple, stable)
    ========================= */
 
-.page-wrapper {
-  display: flex;
-  flex-direction: row;   /* ← lock desktop */
-  align-items: flex-start;
-  gap: 40px;
-}
+/* =========================
+   Topbar (fixed, clean)
+   ========================= */
 
-.sidebar {
-  width: 260px;
-  flex-shrink: 0;
-  padding: 20px;
-  background-color: #f5f5f5;
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+
+  background-color: #f5f5f5;   /* ← grey bar */
   border-radius: 6px;
 }
 
-.content {
-  flex: 1;
-  min-width: 0;
-}
-
-/* =========================
-   Profile (desktop)
-   ========================= */
-
-.profile {
-  text-align: center;
-}
-
-.profile-img {
-  width: 180px;
-  height: 180px;
+/* Avatar */
+.topbar-img {
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
-  object-fit: cover;
-  background-color: #fff;
+
+  background-color: #ffffff;   /* ← fully white */
   border: 2px solid #ddd;
+
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* Slightly tighter on small screens without changing layout */
+@media (max-width: 600px) {
+  .topbar {
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  .topbar-img {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 /* =========================
-   Posts (readability)
+   Posts (restore spacing)
    ========================= */
 
-.post-content,
-.post-header {
-  max-width: 720px;
-  margin: 0 auto;
+.post-list li {
+  margin-bottom: 1.8em;
 }
 
 /* =========================
@@ -151,46 +146,46 @@ h2 { font-size: 1.6em; }
   display: none;
 }
 
+
+
 /* =========================
-   Mobile (ONLY real mobile)
+   Topbar (robust version)
    ========================= */
 
-@media (max-width: 650px) {
-
-  .page-wrapper {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    background-color: transparent;
-    padding: 10px 0;
-    border-radius: 0;
-  }
-
-  .profile {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-align: left;
-  }
-
-  .profile-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-  }
-
-  .profile-text h3,
-  .profile-text p {
-    margin: 0;
-  }
-
-  .profile-img {
-    width: 65px;
-    height: 65px;
-    flex-shrink: 0;
-    margin: 0;
-  }
-
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
 }
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  flex-shrink: 0;
+}
+
+/* Image inside (optional) */
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text */
+.topbar-text h3 {
+  margin: 0;
+}
+
+.topbar-text p {
+  margin: 2px 0 0 0;
+  font-size: 0.9em;
+  color: #666;
+}
+

@@ -2,39 +2,40 @@
 layout: default
 ---
 
-<div class="page-wrapper">
+<div class="topbar">
+  <div class="avatar"></div>
 
-  <aside class="sidebar">
-    <div class="profile">
-      <img src="/assets/img/profile.jpg" class="profile-img">
-
-      <div class="profile-text">
-        <h3>Pawel</h3>
-        <p>Writing about stuff.</p>
-      </div>
-    </div>
-  </aside>
-
-  <div class="content">
-    {{ content }}
-
-    <h2>Posts</h2>
-
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li>
-          <span class="post-meta">
-            {{ post.date | date: "%b %-d, %Y" }}
-          </span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title }}
-            </a>
-          </h3>
-        </li>
-      {% endfor %}
-    </ul>
-
+  <div class="topbar-text">
+    <h3>Pawel</h3>
+    <p>Writing about stuff.</p>
   </div>
+</div>
+
+<div class="content">
+
+  {{ content }}
+
+  <h2>Posts</h2>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
 
 </div>
+
+
+
+
+
+

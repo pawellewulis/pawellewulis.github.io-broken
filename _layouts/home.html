@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="page-wrapper">
+
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="/assets/img/profile.jpg" class="profile-img">
+
+      <h3>Pawel</h3>
+      <p>Writing about stuff.</p>
+    </div>
+  </aside>
+
+  <div class="content">
+    {{ content }}
+
+    <h2>Posts</h2>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">
+            {{ post.date | date: "%b %-d, %Y" }}
+          </span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title }}
+            </a>
+          </h3>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+</div>

@@ -145,7 +145,7 @@ Now, we ask any guardian:
 
 $$ \text{Is it true that $\varphi(x)$?}$$
 
-There are four possible cases: the guardian we ask may be truthful or not, and $x$ may be true or false. The resulting answers are summarized below. The ticks and crosses indicate whether $\varphi (x)$ itself evaluates to true ($\checkmark$) or false ($\times$).
+There are four possible cases: the guardian we ask may be truthful or not, and $x$ may be true or false. The resulting answers are summarized below. The ticks and crosses indicate whether $\varphi (x)$ itself evaluates to true $(\checkmark)$ or false $(\times)$.
 
 
 $$

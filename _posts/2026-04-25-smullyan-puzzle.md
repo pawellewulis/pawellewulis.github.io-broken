@@ -116,7 +116,7 @@ In this case, we can conclude that the liar has the key, but we still cannot tel
 
 <div style="height: 1.0em;"></div>
 
-#### The Framework
+#### Putting Things in Form
 
 Let us introduce some notation and formalize the discussion a bit. Assume that $x$ is a sentence and $v(x)$ is its logical value, so $v(x)=1$ if $x$ is true and $v(x)=0$ if $x$ is false. The general form of the question we ask is:
 

@@ -8,7 +8,7 @@ title: "The Tale of the Hardest Logic Puzzle Ever"
 
 <img src="/assets/img/goddesses/goddesses.png"
      alt="Front Image"
-     style="max-width: 700px; width: 100%; display: block; margin: 1.5em auto;">
+     style="max-width: 800px; width: 100%; display: block; margin: 1.5em auto;">
 
 The puzzle once baptized as the hardest logic puzzle ever was described in an article by George Boolos, published in *The Harvard Review of Philosophy* in 1996, where Raymond Smullyan is mentioned in the very first sentence as the original author. How the problem was originally formulated, and its exact attribution, are not entirely straightforward, but we will not dwell on historical technicalities here. Without further ado, let's unveil the challenge:
 

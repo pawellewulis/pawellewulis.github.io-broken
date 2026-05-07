@@ -7,6 +7,15 @@ title: "Geometry of the Unbiased Variance Estimator"
 ---
 
 
+<figure style="max-width: 800px; margin: 1.5em auto; text-align: right;">
+  <img src="/assets/img/variance/kandinsky.png"
+       alt="ASFR in Poland of 2014"
+       style="width: 100%; display: block;">
+  <figcaption style="font-size: 0.8em; color: #000;">
+    Wassily Kandinsky, <em>White Cross</em> (1922), detail
+  </figcaption>
+</figure>
+
 
 The unbiased variance estimator is given by the well-known formula:
 

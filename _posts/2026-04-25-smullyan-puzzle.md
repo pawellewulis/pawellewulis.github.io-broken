@@ -39,7 +39,7 @@ To rule out these cases, let's simply assume that any such question makes a godd
 
 #### Key difficulties
 
-This problem is an excellent case study in how to decompose a larger task into a collection of smaller, more manageable ones.
+This problem is an excellent case study in how to decompose a larger task into a collection of smaller ones.
 
 We can quickly identify the core challenges posed:
 

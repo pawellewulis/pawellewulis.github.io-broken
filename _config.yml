@@ -13,3 +13,5 @@ kramdown:
 header_pages:
  - index.md
  - about.md
+
+version: 2

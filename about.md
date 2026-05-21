@@ -24,7 +24,7 @@ permalink: /about/
   </div>
   <div>
 
-A while ago, I got a PhD in mathematics, specializing in analytic number theory. I was basically hunting for prime numbers in funny patterns.<br><br>
+A while ago, I got a PhD in mathematics. I was hunting for prime numbers in funny patterns.<br><br>
 
 I started this blog to cover some topics that don’t fully belong to academia or to my professional work. Enjoy!
 <br><br>

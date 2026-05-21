@@ -89,9 +89,9 @@ $$
 = \frac{1}{n-1}\,\lVert \boldsymbol{X} - \boldsymbol{C} \rVert_{\ell^2}^2.
 $$
 
-Here $\lVert \cdot \rVert_{\ell^2}$ denotes the Euclidean norm, the standard way mathematicians refer to “distance from zero”.
+Here $\lVert \cdot \rVert_{\ell^2}$ denotes the Euclidean norm, the standard way mathematicians refer to 'distance from zero'.
 
-Neat. We are interested in the expected distance from $\boldsymbol{X} - \boldsymbol{C}$ to $\mathbf{0}$. Let us notice a simple but important property of this vector. If we define $X_i' = X_i - \overline{X}$ for $i = 1, \dots, n$, then
+Neat. We are interested in the expected distance from $\boldsymbol{X} - \boldsymbol{C}$ to $\mathbf{0}$. Let's notice a simple but important property of this vector. If we define $X_i' = X_i - \overline{X}$ for $i = 1, \dots, n$, then
 
 $$
 \langle \boldsymbol{X} - \boldsymbol{C}, \mathbf{1} \rangle

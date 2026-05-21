@@ -10,7 +10,7 @@ title: "The Hardest Logic Puzzle Ever"
      alt="Front Image"
      style="max-width: 800px; width: 100%; display: block; margin: 1.5em auto;">
 
-The puzzle once baptized as the hardest logic puzzle ever was described in an article by George Boolos, published in *The Harvard Review of Philosophy* in 1996, where Raymond Smullyan is mentioned in the very first sentence as its author. The original formulation of the problem and who was the first to call it 'the hardest ever' are not entirely straightforward, but let's not get consumed by technicalities here. The challenge:
+The puzzle once baptized as the hardest logic puzzle ever was described in an article by George Boolos, published in *The Harvard Review of Philosophy* in 1996, where Raymond Smullyan is mentioned in the very first sentence as its author. Who was the first to call it 'the hardest ever' isn't entirely straightforward. The challenge:
 
 <div style="border: 2px solid black; padding: 12px; margin: 1.5em 0;">
   <em>
@@ -21,7 +21,7 @@ The puzzle once baptized as the hardest logic puzzle ever was described in an ar
 
 #### Assumptions
 
-Before we proceed, let's take a look at a few clarifications mentioned by Boolos himself in his article:
+In his article, Boolos himself mentioned a few clarifications:
 
 - Answers given by the Goddess of Fate may be treated as the result of a fair coin toss between Da and Ja. Since we are expected to provide a strategy that works with certainty, we must always consider both possibilities anyway.
 
@@ -29,7 +29,7 @@ Before we proceed, let's take a look at a few clarifications mentioned by Boolos
 
 - The choice of which goddess to question may depend on previous answers.
 
-One extra detail worth addressing upfront is that some solutions attempt to 'hack' the problem by posing paradoxical questions with no well-defined answer, for instance:
+One extra detail worth mentioning is that some solutions attempt to 'hack' the problem by posing paradoxical questions with no well-defined answer, for instance:
 
 $$ \text{Is this statement false?} $$
 
@@ -49,13 +49,13 @@ We can quickly identify the core challenges posed:
 
 - One goddess provides random answers, shrouding everything in an extra layer of fog. Even if we somehow learned the meaning of Da/Ja and forced the Goddess of Lies to speak truthfully, it would still not be obvious how to proceed.
 
-For each of these points, we can construct a toy example that isolates the difficulty. Later, we combine these pieces into a solution that emerges naturally.
+For each of these points, we can construct a toy example that isolates the difficulty. Joining these bricks together will then lead to the solution naturally.
 
 <div style="height: 1.0em;"></div>
 
 # Two guardians
 
-The first issue we resolve is how to avoid getting tricked by the Goddess of Lies. It is best to start with a simpler puzzle, one that is arguably even more well known than the problem of three goddesses. I particularly like the classic two guardians lore, though many have encountered it in the form of the Knights and Knaves problem. It goes as follows:
+The first issue we resolve is how to avoid getting tricked by the Goddess of Lies. It is best to start with a simpler puzzle, one that is possibly even more well known than the problem of three goddesses. I particularly like the classic two guardians lore, though many have encountered it in the form of the Knights and Knaves problem. It goes as follows:
 
 <div style="border: 2px solid black; padding: 12px; margin: 1.5em 0;">
   <em>
@@ -118,11 +118,11 @@ In this case, we can conclude that the liar has the key, but we still cannot tel
 
 #### Putting things in form
 
-Let us introduce some notation and formalize the discussion a bit. Assume that $x$ is a sentence and $v(x)$ is its logical value, so $v(x)=1$ if $x$ is true and $v(x)=0$ if $x$ is false. The general form of the question we ask is:
+Let's organize our discussion a bit by introducing some notation. Assume that $x$ is a sentence and $v(x)$ is its logical value, so $v(x)=1$ if $x$ is true and $v(x)=0$ if $x$ is false. The general form of the question we ask is:
 
 $$ \text{Is it true that $x$?} $$
 
-For instance, in one of the examples above we had $x = \text{"2+2=4"}$. In such cases, we expect one guardian to answer Yes and the other one to answer No. However, we also saw that the question "Do you have the key?" can result in two No's (or two Yes's). This happens because we are effectively asking two different questions, depending on the recipient. To fully align with the formalization, we may label the guardians as Guardian A and Guardian B, and consider a statement such as
+For instance, in one of the examples above we had $x = \text{"2+2=4"}$. In such cases, we expect one guardian to answer Yes and the other one to answer No. However, we also saw that the question "Do you have the key?" can result in two No's (or two Yes's). This happens because we are effectively asking two different questions, depending on the recipient. To fully align with the introduced formalization, we may simply label the guardians as Guardian A and Guardian B, and consider a statement such as
 
 $$ x = \text{"Guardian A has the key."}$$
 

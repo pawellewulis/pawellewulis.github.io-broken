@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "The Tale of the Hardest Logic Puzzle Ever"
+title: "The Hardest Logic Puzzle Ever"
 
 ---
 
@@ -10,7 +10,7 @@ title: "The Tale of the Hardest Logic Puzzle Ever"
      alt="Front Image"
      style="max-width: 800px; width: 100%; display: block; margin: 1.5em auto;">
 
-The puzzle once baptized as the hardest logic puzzle ever was described in an article by George Boolos, published in *The Harvard Review of Philosophy* in 1996, where Raymond Smullyan is mentioned in the very first sentence as the original author. How the problem was originally formulated, and its exact attribution, are not entirely straightforward, but we will not dwell on historical technicalities here. Without further ado, let's unveil the challenge:
+The puzzle once baptized as the hardest logic puzzle ever was described in an article by George Boolos, published in *The Harvard Review of Philosophy* in 1996, where Raymond Smullyan is mentioned in the very first sentence as its author. The original formulation of the problem and who was the first to call it 'the hardest ever' are not entirely straightforward, but let's not get consumed by technicalities here. The challenge:
 
 <div style="border: 2px solid black; padding: 12px; margin: 1.5em 0;">
   <em>
@@ -33,11 +33,11 @@ One extra detail worth addressing upfront is that some solutions attempt to 'hac
 
 $$ \text{Is this statement false?} $$
 
-To rule out these cases, let us adopt the convention that any such question makes a goddess wrathful, and she responds with a randomly chosen answer. The same applies to questions that fall outside the scope of her vast knowledge.
+To rule out these cases, let's simply assume that any such question makes a goddess wrathful and she responds with a randomly chosen answer. The same applies to questions that fall outside the scope of her vast knowledge.
 
 <div style="height: 1.0em;"></div>
 
-#### Key Difficulties
+#### Key difficulties
 
 This problem is an excellent case study in how to decompose a larger task into a collection of smaller, more manageable ones.
 
@@ -53,7 +53,7 @@ For each of these points, we can construct a toy example that isolates the diffi
 
 <div style="height: 1.0em;"></div>
 
-# Two Guardians
+# Two guardians
 
 The first issue we resolve is how to avoid getting tricked by the Goddess of Lies. It is best to start with a simpler puzzle, one that is arguably even more well known than the problem of three goddesses. I particularly like the classic two guardians lore, though many have encountered it in the form of the Knights and Knaves problem. It goes as follows:
 
@@ -77,7 +77,7 @@ The first issue we resolve is how to avoid getting tricked by the Goddess of Lie
 
 <div style="height: 1.0em;"></div>
 
-#### Warm-up Questions
+#### Warm-up questions
 
 Let us ponder for a moment the dynamics behind the solution. It is natural to start by analyzing some obvious questions. A tempting first try:
 
@@ -116,7 +116,7 @@ In this case, we can conclude that the liar has the key, but we still cannot tel
 
 <div style="height: 1.0em;"></div>
 
-#### Putting Things in Form
+#### Putting things in form
 
 Let us introduce some notation and formalize the discussion a bit. Assume that $x$ is a sentence and $v(x)$ is its logical value, so $v(x)=1$ if $x$ is true and $v(x)=0$ if $x$ is false. The general form of the question we ask is:
 
@@ -162,7 +162,7 @@ Any Yes answer means that $v(x)=1$, regardless of which guardian we ask. This fu
 
 <div style="height: 1.0em;"></div>
 
-# How Much Can a Yes/No Tell You?
+# How much can a Yes/No tell you?
 
 At this point, it may be helpful to recall how an answer carries information.
 
@@ -203,7 +203,7 @@ Better than nothing.
 
 <div style="height: 1.0em;"></div>
 
-#### States to Consider in the Smullyan Puzzle
+#### States to consider in the Smullyan puzzle
 
 In the main puzzle, we need to assign labels to three goddesses, which gives us $3!=6$ possible states. This means that $\lceil \log_2 6 \rceil = 3$ questions are the absolute minimum to distinguish between them, even if all the goddesses always spoke truthfully. Similarly, in the Two Guardians puzzle, we only needed to distinguish between 2 possible states, so a single question was enough.
 
@@ -211,7 +211,7 @@ In the main puzzle, we need to assign labels to three goddesses, which gives us 
 
 <div style="height: 1.0em;"></div>
 
-# Language of Gods
+# Language of gods
 
 Another complication is that the goddesses from the Smullyan puzzle do not simply answer Yes/No, but rather Da/Ja. Let us isolate this difficulty and look at a simpler problem.
 
@@ -250,7 +250,7 @@ We reached a configuration where Da simply indicates that the underlying questio
 
 <div style="height: 1.0em;"></div>
 
-# Even Aliens Can Lie
+# Even aliens can lie
 
 Take the same alien puzzle from the previous section, but add the extra assumption that one of the aliens always lies. As before, we label them as $A$ and $B$, though we do not know which is which. This gives us $2^3=8$ possible cases: an alien may lie or not, Da may mean Yes or No, and the key may be held by either alien. 
 
@@ -361,7 +361,7 @@ We are now done, because two questions are enough to determine which of the rema
 
 <div style="height: 1.0em;"></div>
 
-# Addendum: Is it *a* Solution or *the* Solution?
+# Addendum: Is it *a* solution or *the* solution?
 
 The proverbial careful reader might have noticed that the question we asked $G_1$ in the previous section was somewhat arbitrary. It does the job, but is it really necessary?
 
@@ -376,7 +376,7 @@ where $\mathcal{S}$ may be any subset of the 6 possible permutations. Since each
 
 <div style="height: 1.0em;"></div>
 
-#### What Makes a First Question Work?
+#### What makes a first question work?
 
 This boils down to two simple requirements:
 
@@ -395,7 +395,7 @@ and the answer is Yes. The diagram below shows which permutations remain possibl
   <img src="/assets/img/goddesses/goddesses_scenarios.png"
        alt="Scenarios"
        style="width: 100%; display: block;">
-  <figcaption style="font-size: 0.9em; color: #000;">
+  <figcaption style="font-size: 0.8em; color: #000;">
     The black dots represent the candidate permutations remaining after the first answer. Since we do not know whether the goddess is lying or not, we must consider both possibilities.
   </figcaption>
 </figure>
@@ -409,7 +409,7 @@ The same argument applies if we direct the second question to $G_1$ or $G_3$ ins
 
 <div style="height: 1.0em;"></div>
 
-#### Counting the Possible Solutions
+#### Counting the possible solutions
 
 We now understand the conditions that the first question must satisfy. Let us count the valid choices of $\mathcal{S}$, the subset of permutations specified by the question to $G_1$. First, whether $\mathcal{S}$ contains $(R,F,T)$ or $(R,T,F)$ doesn't matter, since both remain possible anyway; at this stage, we cannot exclude $G_1=R$. Among the remaining 4 permutations, we must distinguish between the cases $G_2=R$ and $G_3=R$, so that we can identify a non-$R$ goddess and direct the remaining two questions to her.
 

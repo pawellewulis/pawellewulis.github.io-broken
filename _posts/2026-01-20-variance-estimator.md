@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Geometry of the Unbiased Variance Estimator"
+title: "Geometry of Variance Estimators"
 
 ---
 
@@ -192,7 +192,7 @@ $\mathbf{0}$.
 This reflects the fact that observing $X_1 = 4.01$ and $X_2 = 4.03$ with $\mu$
 unknown naturally suggests values concentrated around $4$ and a small variance.
 While $n = 2$ hardly constitutes a meaningful sample, this interpretation is at
-least reasonable if one is forced to make a judgment.
+least reasonable if one is forced to make a judgement.
 
 To observe a similar effect for larger samples (namely, all measurements clustering
 together while remaining far from the true mean) we would need to be rather unlucky.
@@ -354,7 +354,7 @@ To answer what factor fits an unbiased estimator of variance, we need to calcula
 
 <div class="lemma-box" markdown="1">
 
-**Little Lemma** $~$ Let $\boldsymbol{X}$ be a random vector of independent entries of length $n$ such that
+**Little Lemma.** $~$ Let $\boldsymbol{X}$ be a random vector of independent entries of length $n$ such that
 $X_i \sim X$ for all the indices $i$, where $X$ is a random variable with well defined
 expected value $\mu$ and variance $\sigma^2$. Let $\boldsymbol{A}$ be an $n \times n$
 matrix. Then,

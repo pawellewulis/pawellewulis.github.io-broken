@@ -2,40 +2,58 @@
 layout: default
 ---
 
-<div class="topbar">
-  <div class="avatar"></div>
+<style>
+.home-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
 
-  <div class="topbar-text">
-    <h3>Pawel</h3>
-    <p>Writing about stuff.</p>
+.left-image img {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+}
+</style>
+
+<div class="home-layout">
+
+  <!-- <div class="left-image">
+    <img src="/assets/img/profile/pingwiniak.png" alt="">
+    <figcaption style="font-size: 0.8em; color: #000;">
+      by Łukasz Skrzeszewski
+  </figcaption>
+  </div> -->
+
+  <figure style="max-width: 260px; height: auto; text-align: right;">
+    <img src="/assets/img/profile/pingwiniak.png" alt="">
+    <figcaption style="font-size: 0.8em; color: #000;">
+      <div style="height: 0.5em;"></div></be>Łukasz Skrzeszewski, <em>The Penguin</em> (2024)
+    </figcaption>
+  </figure>
+
+  <div class="content">
+
+    {{ content }}
+
+    <h2 style="font-size: 2.5em;">Posts</h2>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">
+            {{ post.date | date: "%b %-d, %Y" }}
+          </span>
+
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title }}
+            </a>
+          </h3>
+        </li>
+      {% endfor %}
+    </ul>
+
   </div>
-</div>
-
-<div class="content">
-
-  {{ content }}
-
-  <h2>Posts</h2>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title }}
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
 
 </div>
-
-
-
-
-
-

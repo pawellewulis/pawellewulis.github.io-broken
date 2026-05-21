@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Fertility Rates Are Trickier Than They Seem"
+title: "Fertility Rates Are Tricky"
 
 ---
 
@@ -17,13 +17,13 @@ title: "Fertility Rates Are Trickier Than They Seem"
 
 In recent years, demography has become a hot topic in political debate. More and more countries describe their long-term trends as bad, with fewer children being born and populations aging rapidly.
 
-To quantify how bad ‘bad’ is, we use various metrics, the most prominent of which is the ***total fertility rate*** (TFR). It is possibly the best proxy we have for the expected number of children per woman and is one of the most widely used statistics in this area. However, as we will soon see, the notion is far trickier than many assume.
+To quantify how bad ‘bad’ is, we use various metrics. The most widely used of these metrics is the ***total fertility rate*** (TFR). It is possibly the best proxy we have for the expected number of children per woman. However, as we will soon see, this statistic is far trickier than many might assume.
 
 
 
 # Total fertility rate: what it is (and isn’t)
 
-Before we proceed to present the full definition and motivation behind it, it's better to explain what TFR *is not*. 
+Before we present the full definition and motivation behind it, it's better to first explain what TFR *is not*. 
 
 #### Wrong approach 1: Just take the average number of children per woman?
 
@@ -38,7 +38,7 @@ Ok, what about something like the number of births per 1,000 people in the past 
 
 This metric is called the ***(crude) birth rate*** (BR). Since both BR and TFR are supposed to capture general demographic trends, the two are quite frequently confused. Regardless, there are some serious caveats:
 
-- If we consider ‘per 1,000 people’ instead of ‘per 1,000 women’, we expose ourselves to the issue of skewed gender ratios. For example, in the United Arab Emirates (2026), ~64% of the population are men.
+- If we consider ‘per 1,000 people’ instead of ‘per 1,000 women’, we expose ourselves to the issue of skewed gender ratios. For example, in the United Arab Emirates ~64% of the population are men (2026).
 
 - Imagine a country where politicians are expected to do something about a low BR. They come up with a brilliant idea: let's relocate everyone above the age of 60 to the Côte d’Azur or Spain. The BR suddenly improves, even though nothing changes about how many children women are willing to have. 
 
@@ -50,9 +50,9 @@ Ok, what if we focused on women of reproductive age instead? Such a metric is ca
 
 - One could argue the range is somewhat arbitrary, since a randomly chosen woman aged 48 is, statistically speaking, far less likely to give birth than one aged 28. We could assign some weights to each age group to account for that, but then, GFR would become convoluted and even more arbitrary.
 
-- Ebb and flow. First, consider how many births, on average, are given by women of a particular age in a given country in a given year. This is called ASFR, or ***Age-Specific Fertility Rate***. 
+- Demographic ebb and flow. Let's consider the average number of births to women of a particular age in a given country in a given year. This is called ASFR, or ***Age-Specific Fertility Rate***. The idea here is that any significant shift in how childbearing is approached should be reflected in some noticeable changes in ASFR. It turns out, though, that GFR may move even if ASFRs remain constant across all the age groups.
 <div style="height: 0.5em;"></div>
-**Example.** Imagine Country X where the likelihood of a woman of any given age having a child didn't change at all between 1990 and 2010. For each age group the ASFR remains constant over time. However, the population age structure *might* change, which will distort GFR.
+**Example.** Imagine Country X where the likelihood of a woman of any given age having a child didn't change at all between 1990 and 2010. For each age group the ASFR remains constant over time. However, the population age structure *might* change, which will distort GFR. 
 
 <figure style="max-width: 800px; text-align: center;">
   <img src="/assets/img/fertility_rate/br_vs_tfr.png"
@@ -66,24 +66,38 @@ Ok, what if we focused on women of reproductive age instead? Such a metric is ca
 
 #### Actual Definition of TFR
 
-The last wrong approach taught us that we need a metric that won't change if ASFRs remain constant across all the age groups. The simplest thing we could do is to simply take the sum of all these values:  
+The last wrong approach taught us that we need a metric that won't change if ASFRs remain fixed. The simplest thing we could do is to simply take the sum of all these values:  
 
 $$ TFR := \sum_{\text{age}} ASFR(\text{age}). $$
 
 Voilà. In the case described by the diagram above we get $TFR = 2.2$. 
 
+The key advantage of TFR is that the number is easily interpretable. When we hear that Birth Rate of Country X is 19.4/1000, it's not intuitively obvious if it's a lot or not. On the other hand, the TFR of Country X being 2.2 immediately tells us that women are expected to have slightly more than two children on average.
+
 An interpretation of TFR I am quite fond of is the following:
 
-- Imagine a woman born in 2014 who lives through that year on repeat. Every time she reaches the end of the year, she returns to its beginning and experiences the same conditions again. The total number of children she has across these repetitions is exactly what the TFR measures.
+- Imagine a girl born in 2014 (say) who lives through the same year over and over again. Every time she reaches the end of the year, she returns to its beginning and experiences the same conditions. The average total number of children such time-travelling women would have is exactly what the TFR measures.
 
-The key advantage of TFR is its interpretability. When we hear that Birth Rate of Country X is 19.4/1000, it's not intuitively obvious if it's a lot or not. On the other hand, the TFR of Country X being 2.2 immediately tells us that women are expected to have slightly more than two children on average.
-
-This metric also has some weaknesses, but amongst the most popular choices this one is possibly the most robust.  
+This metric also has some weaknesses, but among the most popular choices this one is possibly the most robust.  
 
 
-## **Myth 1:** If TFR sits below ~2.1, then the population of a country decreases.
+# Demographic mythology
 
-The value of 2.1 refers to what’s called the ***replacement rate***. I admit the title of this section is a bit provocative, because it’s not really a myth… at least not in the long run. And it might take decades before we see any 'long run'. It turns out that, locally, many interesting and counterintuitive scenarios may occur.
+In fires of failed experiments and doubts we forged a metric that satisfies several conditions we desire:
+
+1) It is not contaminated by information from the distant past.
+
+2) It can't be skewed by over- or underrepresentation of certain age cohorts.
+
+3) It's easy to interpret… 
+
+…but alas, even TFR prepared some pitfalls for us. The following three misconceptions are the ones I encountered most often.
+
+
+
+### **Myth 1:** If TFR sits below ~2.1, then the population of a country decreases.
+
+The value of 2.1 refers to what’s called the ***replacement rate***. I admit the title of this section is a bit provocative, because it’s not really a myth… at least not in the long run! And it might take decades before we see any 'long run'. It turns out that, locally, many interesting and counterintuitive scenarios may occur.
 
 Let us begin by stating the obvious: 
 
@@ -136,7 +150,7 @@ If we forget about the migration effects, then the population grows simply if mo
 
 The temporary increase in population despite low TFR is called ***demographic momentum***. As the example above shows, this period may last even a few decades before a country finally reaches the state of demographic freefall.
 
-One could, of course, point out that the scenario I described is artificial and simplified beyond what reality has to offer. However, as the picture below shows, the demographic momentum is actually the default state:
+One could, of course, point out that the scenario I described is artificial and simplified beyond what reality has to offer. However, as the picture below shows, the demographic momentum is actually the norm rather than the exception:
 
 
 <figure style="max-width: 800px; text-align: center;">
@@ -152,19 +166,19 @@ One could, of course, point out that the scenario I described is artificial and 
 
 
 
-## **Myth 2:** Replacement rate is above 2.0 mainly because of premature mortality.
+### **Myth 2:** Replacement rate is above 2.0 mainly because of premature mortality.
 
 Not quite, the main culprit is the ***sex ratio at birth***: more boys than girls are born, and the ratio is usually estimated at around 105/100. Therefore, to ensure full replacement (1 woman per 1 woman), roughly ~2.05 children must be born per woman on average. Even if no one died before the end of the reproductive age, the sex ratio at birth would still be fixed by nature itself.
 
-In most high-income countries, a newborn girl is expected to live to at least age 40 with 98–99% probability, which has only a small effect on the overall replacement rate. In such a scenario, all one needs is to bump it up by another ~0.02-0.03 for good measure.
+In most high-income countries, a newborn girl is expected to live to at least age 40 with 98-99% probability, which has only a small effect on the overall replacement rate. In such a scenario, all one needs is to bump it up by another ~0.02-0.03 for good measure.
 
 Of course, in many parts of the world premature mortality, especially infant mortality, remains a serious issue. In such cases, the *true* replacement rate can be much higher than 2.1.
 
 
 
-## **Myth 3:** Persistently low fertility rates eventually lead to a self-reinforcing aging spiral.
+### **Myth 3:** Persistently low fertility rates eventually lead to a self-reinforcing aging spiral.
 
-This fairly common misconception stems from the following intuition: fewer people are born, which leads to fewer young people working and having children in the future, which in turn leads to even fewer children in the future-future, and so on.
+This one is a bit difficult to state cleanly, but there is a fairly common misconception that stems from the following intuition: fewer people are born, which leads to fewer young people working and having children in the future, which in turn leads to even fewer children in the future-future, and so on. A relentless demographic march of the elderly.
 
 The issue is that the number of elderly people also shrinks proportionally over time.
 
@@ -202,14 +216,14 @@ The goal is to demonstrate the underlying mechanisms, so we need to make comprom
 </figure>
 <div style="height: 0.5em;"></div>
 
-We notice that in 2014 the pyramid has a rather irregular shape which gradually smooths out over time. The reason is that societies usually shift too quickly for what we call the 'long term' to ever truly materialize. It takes almost 100 years of simulation before the convergence becomes clearly visible. Social and economic changes, historical events, and technological advancements simply never allow the system to settle for that long.
+We notice that in 2014, the pyramid has a rather irregular shape, which gradually smooths out over time. The reason is that societies usually shift too quickly for what we call the 'long term' to ever truly materialize. It takes almost 100 years of simulation before the convergence becomes clearly visible. Social and economic changes, historical events, technological advancements, etc., simply never allow the system to settle for that long.
 
 <div style="border: 2px solid black; padding: 12px; margin: 1.5em 0;">
   <strong>Technical Remark.</strong>
   The simulation starts in 2014 rather than something more recent to allow for a simple sanity check. In 2014, around 22% of the Polish population was aged 60 or above. Ten years later, the number grew to 26.6%. Our little simulation predicted 27.5%. Not quite a bullseye, but at least we seem to be in roughly the right ballpark.
 </div>
 
-## Modelling demographic trends
+# Modelling demographic trends
 
 In this section I'll briefly cover how I generated the simulations discussed in this post. Given some population to study we need the following ingredients:
 
@@ -222,7 +236,7 @@ $$
   \mathbf{P}( 34 \rightarrow 35 \mid \text{M}). $$
 
 - Sex ratio at birth. I estimated it using the data on Poland of 2014. It turned out that 
-  $\mathbf{P}(\text{Girl}) \approx 0.48557$.
+  $\mathbf{P}(\text{Girl}) \approx 48.557\%$.
 
 - ASFR for each age group. Together with the values of $W_{\text{age},t}$ (analogous to $M_{\text{age},t}$ but for women), this gives the formulae for the number of newborns the next year:
 
@@ -249,7 +263,7 @@ Mathematically speaking, this graph represents a certain flow. Since all edge we
 
 <div style="border: 2px solid black; padding: 12px; margin: 1.5em 0;">
   <strong>So why does the population pyramid from Myth 3 stabilize?</strong>
-    If we apply this transformation repeatedly, as in any long-term simulation, the flow eventually becomes dominated by the eigenvector corresponding to the largest eigenvalue of the Leslie matrix. The existence of a dominant positive eigenvalue is (almost) guaranteed by the Perron-Frobenius theorem.
+    If we apply this transformation repeatedly, the flow eventually becomes dominated by the eigenvector corresponding to the largest eigenvalue of the Leslie matrix. The existence of a dominant positive eigenvalue in this case is (almost) guaranteed by the Perron-Frobenius theorem.
 
     <div style="height: 0.5em;"></div>
     There <em>are</em> some strange edge cases, but this is a topic for another post.
